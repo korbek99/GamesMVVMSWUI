@@ -9,7 +9,27 @@ import SwiftUI
 
 struct GamesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+
+            Color.black
+                .ignoresSafeArea()
+ 
+            VStack(spacing: 20) {
+                Image(systemName: "clock.badge.exclamationmark.fill")
+                    .font(.system(size: 60))
+                    .foregroundColor(.yellow)
+                
+                Text("GameList")
+                    .font(.system(size: 28, weight: .black, design: .monospaced))
+                    .foregroundColor(.white)
+                
+                Text("Disfruta tu juego.")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+            }
+        }
     }
 }
 

@@ -6,10 +6,31 @@
 //
 
 import SwiftUI
+import SwiftUI
 
 struct CommingSoonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+
+            Color.black
+                .ignoresSafeArea()
+ 
+            VStack(spacing: 20) {
+                Image(systemName: "clock.badge.exclamationmark.fill")
+                    .font(.system(size: 60))
+                    .foregroundColor(.yellow) 
+                
+                Text("COMING SOON")
+                    .font(.system(size: 28, weight: .black, design: .monospaced))
+                    .foregroundColor(.white)
+                
+                Text("Esta sección está en desarrollo, entrenador.")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+            }
+        }
     }
 }
 
