@@ -14,6 +14,16 @@
 		D947FE9B2F32B0FA00F527DC /* GamesMVVMSWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FE9A2F32B0FA00F527DC /* GamesMVVMSWUITests.swift */; };
 		D947FEA52F32B0FA00F527DC /* GamesMVVMSWUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEA42F32B0FA00F527DC /* GamesMVVMSWUIUITests.swift */; };
 		D947FEA72F32B0FA00F527DC /* GamesMVVMSWUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEA62F32B0FA00F527DC /* GamesMVVMSWUIUITestsLaunchTests.swift */; };
+		D947FEBA2F32B7EE00F527DC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEB92F32B7EE00F527DC /* HomeView.swift */; };
+		D947FEBE2F32B94100F527DC /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEBD2F32B94100F527DC /* LaunchView.swift */; };
+		D947FEC02F32B9DE00F527DC /* endpointsDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = D947FEBF2F32B9DE00F527DC /* endpointsDev.plist */; };
+		D947FEC42F32BAC700F527DC /* APIEndpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEC32F32BAC700F527DC /* APIEndpointModel.swift */; };
+		D947FEC62F32BAF300F527DC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEC52F32BAF300F527DC /* BaseService.swift */; };
+		D947FEC82F32BB1800F527DC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEC72F32BB1800F527DC /* NetworkError.swift */; };
+		D947FECA2F32BC1F00F527DC /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FEC92F32BC1F00F527DC /* GamesView.swift */; };
+		D947FECC2F32BC5000F527DC /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FECB2F32BC5000F527DC /* FavoritesView.swift */; };
+		D947FECE2F32BC7700F527DC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FECD2F32BC7700F527DC /* InfoView.swift */; };
+		D947FED02F32BC9C00F527DC /* CommingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947FECF2F32BC9C00F527DC /* CommingSoonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		D947FEA02F32B0FA00F527DC /* GamesMVVMSWUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesMVVMSWUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D947FEA42F32B0FA00F527DC /* GamesMVVMSWUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesMVVMSWUIUITests.swift; sourceTree = "<group>"; };
 		D947FEA62F32B0FA00F527DC /* GamesMVVMSWUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesMVVMSWUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D947FEB92F32B7EE00F527DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D947FEBD2F32B94100F527DC /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		D947FEBF2F32B9DE00F527DC /* endpointsDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpointsDev.plist; sourceTree = "<group>"; };
+		D947FEC32F32BAC700F527DC /* APIEndpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointModel.swift; sourceTree = "<group>"; };
+		D947FEC52F32BAF300F527DC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D947FEC72F32BB1800F527DC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D947FEC92F32BC1F00F527DC /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		D947FECB2F32BC5000F527DC /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		D947FECD2F32BC7700F527DC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		D947FECF2F32BC9C00F527DC /* CommingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +114,12 @@
 		D947FE882F32B0F500F527DC /* GamesMVVMSWUI */ = {
 			isa = PBXGroup;
 			children = (
+				D947FEB82F32B59600F527DC /* Laucher */,
+				D947FEB72F32B58100F527DC /* Views */,
+				D947FEB62F32B57700F527DC /* EndPoints */,
+				D947FEB52F32B57000F527DC /* Services */,
+				D947FEB42F32B56500F527DC /* ViewModels */,
+				D947FEB32F32B55F00F527DC /* Models */,
 				D947FE892F32B0F500F527DC /* GamesMVVMSWUIApp.swift */,
 				D947FE8B2F32B0F500F527DC /* ContentView.swift */,
 				D947FE8D2F32B0F900F527DC /* Assets.xcassets */,
@@ -125,6 +151,90 @@
 				D947FEA62F32B0FA00F527DC /* GamesMVVMSWUIUITestsLaunchTests.swift */,
 			);
 			path = GamesMVVMSWUIUITests;
+			sourceTree = "<group>";
+		};
+		D947FEB32F32B55F00F527DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D947FEC32F32BAC700F527DC /* APIEndpointModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D947FEB42F32B56500F527DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D947FEB52F32B57000F527DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D947FEC52F32BAF300F527DC /* BaseService.swift */,
+				D947FEC72F32BB1800F527DC /* NetworkError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D947FEB62F32B57700F527DC /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				D947FEBF2F32B9DE00F527DC /* endpointsDev.plist */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		D947FEB72F32B58100F527DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D947FEC22F32BA3900F527DC /* Favorites */,
+				D947FEC12F32BA2F00F527DC /* Info */,
+				D947FEBC2F32B80000F527DC /* CommingSoon */,
+				D947FEBB2F32B7F300F527DC /* Games */,
+				D947FEB92F32B7EE00F527DC /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D947FEB82F32B59600F527DC /* Laucher */ = {
+			isa = PBXGroup;
+			children = (
+				D947FEBD2F32B94100F527DC /* LaunchView.swift */,
+			);
+			path = Laucher;
+			sourceTree = "<group>";
+		};
+		D947FEBB2F32B7F300F527DC /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				D947FEC92F32BC1F00F527DC /* GamesView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		D947FEBC2F32B80000F527DC /* CommingSoon */ = {
+			isa = PBXGroup;
+			children = (
+				D947FECF2F32BC9C00F527DC /* CommingSoonView.swift */,
+			);
+			path = CommingSoon;
+			sourceTree = "<group>";
+		};
+		D947FEC12F32BA2F00F527DC /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D947FECD2F32BC7700F527DC /* InfoView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		D947FEC22F32BA3900F527DC /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				D947FECB2F32BC5000F527DC /* FavoritesView.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D947FEC02F32B9DE00F527DC /* endpointsDev.plist in Resources */,
 				D947FE912F32B0F900F527DC /* Preview Assets.xcassets in Resources */,
 				D947FE8E2F32B0F900F527DC /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +368,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D947FEC42F32BAC700F527DC /* APIEndpointModel.swift in Sources */,
+				D947FEC82F32BB1800F527DC /* NetworkError.swift in Sources */,
+				D947FECA2F32BC1F00F527DC /* GamesView.swift in Sources */,
+				D947FEBA2F32B7EE00F527DC /* HomeView.swift in Sources */,
+				D947FEC62F32BAF300F527DC /* BaseService.swift in Sources */,
+				D947FEBE2F32B94100F527DC /* LaunchView.swift in Sources */,
+				D947FED02F32BC9C00F527DC /* CommingSoonView.swift in Sources */,
 				D947FE8C2F32B0F500F527DC /* ContentView.swift in Sources */,
 				D947FE8A2F32B0F500F527DC /* GamesMVVMSWUIApp.swift in Sources */,
+				D947FECE2F32BC7700F527DC /* InfoView.swift in Sources */,
+				D947FECC2F32BC5000F527DC /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
