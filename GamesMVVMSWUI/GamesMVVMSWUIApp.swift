@@ -13,5 +13,6 @@ struct GamesMVVMSWUIApp: App {
         WindowGroup {
             LaunchView()
         }
+        .modelContainer(for: FavoriteGame.self)
     }
 }

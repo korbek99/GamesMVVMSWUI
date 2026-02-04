@@ -5,9 +5,16 @@
 //  Created by Jose Preatorian on 04-02-26.
 //
 import SwiftUI
+import SwiftData
 
 struct GamesDetailsView: View {
     let game: Game
+
+    @Environment(\.modelContext) private var modelContext
+    @Query private var favorites: [FavoriteGame]
+    private var isFavorite: Bool {
+        favorites.contains { $0.id == game.id }
+    }
     
     var body: some View {
         ScrollView {
@@ -71,8 +78,7 @@ struct GamesDetailsView: View {
 
                     Divider().background(Color.yellow.opacity(0.3))
 
-  
-                    VStack(alignment: .leading, spacing: 50) {
+                    VStack(alignment: .leading, spacing: 15) { //
                         Text("RESUMEN")
                             .font(.headline)
                             .foregroundColor(.yellow)
@@ -85,12 +91,40 @@ struct GamesDetailsView: View {
                     
                     Spacer(minLength: 30)
                 }
-                .padding(.horizontal, 20) 
+                .padding(.horizontal, 20)
                 .padding(.top, 20)
             }
         }
         .background(Color.black.ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: toggleFavorite) {
+                    Image(systemName: isFavorite ? "heart.fill" : "heart")
+                        .foregroundColor(isFavorite ? .red : .yellow)
+                        .font(.system(size: 18, weight: .bold))
+                }
+            }
+        }
+    }
+
+    private func toggleFavorite() {
+        if isFavorite {
+            if let favoriteObject = favorites.first(where: { $0.id == game.id }) {
+                modelContext.delete(favoriteObject)
+            }
+        } else {
+            
+            let newFavorite = FavoriteGame(
+                id: game.id,
+                title: game.title,
+                thumbnailURL: game.thumbnail?.absoluteString ?? "",
+                genre: game.genre! 
+            )
+            modelContext.insert(newFavorite)
+        }
+        
+        try? modelContext.save()
     }
 
     private func detailRow(title: String, value: String) -> some View {

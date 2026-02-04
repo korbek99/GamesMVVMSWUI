@@ -7,8 +7,6 @@
 
 import Foundation
 import SwiftUI
-import Foundation
-import SwiftUI
 
 class GamesViewModel: ObservableObject {
     @Published var games: [Game] = []
